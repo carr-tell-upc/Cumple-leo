@@ -1,0 +1,126 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #ff4c4c; /* Fondo rojo */
+    color: white;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Sección de intereses */
+.interests {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+/* Tarjeta de cada interés */
+.card {
+    background-color: #fff;
+    border: 2px solid #ff4c4c; /* Borde rojo */
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    width: 220px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    font-size: 1.5em;
+    color: #ff4c4c; /* Texto rojo */
+}
+
+.card p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Modal para mostrar detalles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5em;
+    color: #333;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.modal-content h2 {
+    font-size: 1.8em;
+    color: #ff4c4c; /* Título rojo */
+    margin-bottom: 15px;
+}
+
+.modal-content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    font-size: 1em;
+    color: #ff4c4c; /* Texto rojo en el pie de página */
+}
